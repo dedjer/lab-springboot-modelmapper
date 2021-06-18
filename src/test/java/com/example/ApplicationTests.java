@@ -17,7 +17,7 @@ public class ApplicationTests {
     private ModelMapper modelMapper = new ModelMapper();
 
     @Test
-    public void whenConvertPlayertoPlayerDTO_thenCorrect(){
+    public void whenConvertPlayerToPlayerDTO_thenCorrect(){
         Player player = new Player();
         player.setEmail("test@test.com");
 
@@ -26,7 +26,7 @@ public class ApplicationTests {
     }
 
     @Test
-    public void whenConvertOptionalPlayertoPlayerDTO_thenCorrect(){
+    public void whenConvertOptionalPlayerToPlayerDTO_thenCorrect(){
         Player player = new Player();
         player.setEmail("test@test.com");
 
