@@ -7,12 +7,18 @@ import javax.persistence.*;
 public class Player
 {
     @Id
+    @Column(name="id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
+    @Column(name="firstname")
     private String firstName;
 
+    @Column(name="lastname")
     private String lastName;
+
+    @Column(name="email")
+    private String email;
 
     public Player() {}
 
@@ -35,6 +41,10 @@ public class Player
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public String getEmail() { return email; }
+
+    public void setEmail(String email) { this.email = email; }
 }
 
 

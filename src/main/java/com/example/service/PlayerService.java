@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.dto.PlayerDTO;
 import com.example.model.Player;
 
 import java.util.List;
@@ -7,12 +8,17 @@ import java.util.Optional;
 
 public interface PlayerService
 {
-    Player add(Player player);
+    public List<Player> getPlayers();
 
-    List get();
+    public Optional<Player> getPlayer(int id);
 
-    Optional get(int id);
+    public void delete(int id);
 
-    void delete(int id);
+    public Player addPlayer(Player player);
+
+    public PlayerDTO getPlayerDTO(int id);
+
+    public PlayerDTO getPlayerDTOWithMapper(int id);
+
 }
 
